@@ -44,7 +44,10 @@ export default function Page() {
           <img className="-mt-16 relative z-10" src="/hkdd.png" />
           <div className="relative w-full">
             <div className="my-4 text-4xl font-boldins font-bold relative z-10 w-full text-center text-[#632624]">
-              WOOOOOO!!! I love you!! <span className="text-3xl">🥹</span>
+              <span className="block text-center">WOOOOOO!!!</span>
+              <span className="block text-center">
+                I love you!! <span className="text-3xl">🥹</span>
+              </span>
             </div>
             <div className="bg-[#fab6cd] w-full h-[1200px] border-t-8 border-[#632624] absolute -top-14 left-0 z-0"></div>
           </div>
