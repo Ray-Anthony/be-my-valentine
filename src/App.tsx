@@ -35,27 +35,33 @@ export default function Page() {
 
   return (
     <div
-      className={`-mt-16 flex h-screen flex-col items-center justify-center px-5 md:px-0 ${
+      className={`flex h-screen flex-col items-center justify-center ${
         yesPressed ? "gap-10" : ""
-      }`}
+      } overflow-hidden`}
     >
       {yesPressed ? (
         <>
-          <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
-          <div className="my-4 text-2xl font-bold">
-            WOOOOOO!!! I love you!! <span className="text-3xl">🥹</span>
+          <img className="-mt-16 relative z-10" src="/hkdd.png" />
+          <div className="relative w-full">
+            <div className="my-4 text-4xl font-boldins font-bold relative z-10 w-full text-center text-[#632624]">
+              WOOOOOO!!! I love you!! <span className="text-3xl">🥹</span>
+            </div>
+            <div className="bg-[#fab6cd] w-full h-[1200px] border-t-8 border-[#632624] absolute -top-14 left-0 z-0"></div>
           </div>
         </>
       ) : (
         <>
           <img
-            className="h-[200px]"
-            src="https://gifdb.com/images/high/cute-love-bear-roses-ou7zho5oosxnpo6k.gif"
+            className="max-h-[400px] w-auto -mt-16 relative z-10 px-5 md:px-0"
+            src="/invitation.png"
           />
-          <h1 className="my-4 text-3xl text-center">
-            Will you be my Valentine?
-          </h1>
-          <div className="flex items-center">
+          <div className="relative w-full">
+            <h1 className="relative z-10 text-4xl text-center my-4 font-boldins text-[#632624]">
+              Will you be my Valentine?
+            </h1>
+            <div className="bg-[#fab6cd] w-full h-[1200px] border-t-8 border-[#632624] absolute -top-5 left-0 z-0"></div>
+          </div>
+          <div className="flex items-center relative">
             <button
               className={`mr-4 rounded bg-green-500 px-4 py-2 font-bold text-white hover:bg-green-700`}
               style={{ fontSize: yesButtonSize }}
